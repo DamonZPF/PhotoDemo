@@ -33,7 +33,6 @@
     if (self.zoomScale >= 2.5) {
         [self setZoomScale:1 animated:YES];
     }else{
-       // [self setZoomScale:2.5 animated:YES];
         CGPoint point = [tapGesture locationInView:self];
         [self zoomToRect:CGRectMake(point.x -40,point.y -40, 80, 80) animated:YES];
     }
